@@ -27,15 +27,15 @@ print("Your mission is to find the treasure.")
 
 #Write your code below this line 👇
 direction = input("You're at a cross road. Where do you want to go? Type 'left' or 'right'.\n")
-if direction == "left":
+if direction.lower() == "left":
   lake = input("You come to a lake. There is an island in the middle of the lake. Type 'wait' to wait for a boat. Type 'swim' to swim across.\n")
-  if lake == "wait":
+  if lake.lower() == "wait":
     door = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which color do you choose?\n")
-    if door == "red":
+    if door.lower() == "red":
       print("You were burned by fire. Game over.")
-    elif door == "yellow":
+    elif door.lower() == "yellow":
       print("You found the treasure! Congratulations!")
-    elif door == "blue":
+    elif door.lower() == "blue":
       print("You were eaten by beasts. Game over.")
     else:
       print("Game over.")
